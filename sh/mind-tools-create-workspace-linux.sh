@@ -28,7 +28,7 @@ export repo_tool_dir=repo_tool
 export release_default_workspace=mind-tools-release
 # PRIVATE - MANIFEST
 export mind_tools_manifest_default_url=https://github.com/StephaneSeyvoz/mind-tools-release-manifest
-export mind_tools_manifest_default_branch=master
+export mind_tools_manifest_default_branch=from_ssz_assembly
 export local_release_manifest_file=src/assemble/resources/manifest.xml
 # PRIVATE - TOOLS MINIMAL VERSION
 export python_minimal_version_required=2.7
