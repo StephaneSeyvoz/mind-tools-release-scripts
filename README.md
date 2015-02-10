@@ -23,6 +23,8 @@ Use the sh/ scripts, and:
 
 ### sh/mind-tools-release-full-linux.sh
 
+USAGE: mind-tools-install-release-full-linux.sh [manifest_branch_name] [manifest_url]
+
 Runs both following scripts in a sequence, to create a full build.
 
 ### sh/mind-tools-create-workspace-linux.sh
