@@ -80,8 +80,8 @@ mvn -U clean install -f maven/mind-parent/pom.xml $BUILD_OPTIONS || exit 1
 printf 'mvn -U clean install -f ./mind-compiler/pom.xml --projects :mind-compiler %s\n' $BUILD_OPTIONS
 mvn -U clean install -f ./mind-compiler/pom.xml --projects :mind-compiler $BUILD_OPTIONS || exit 1
 
-# Build the mind-tools release
+# Build the mind-tools release - Use repo Profile (-Prepo) to package the generated manifest for sub-modules SHA-1 traceability
 printf 'mvn -U clean install %s\n' $BUILD_OPTIONS
-mvn -U clean install $BUILD_OPTIONS || exit 1
+mvn -U clean install -Prepo $BUILD_OPTIONS || exit 1
 
 popd > /dev/null 2>&1
