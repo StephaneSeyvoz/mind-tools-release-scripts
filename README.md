@@ -31,8 +31,11 @@ Or edit your $(HOME)/.gitconfig file
 
 See http://stackoverflow.com/questions/783811/getting-git-to-work-with-a-proxy-server for further details
 
-For Maven:
-Either edit the conf/settings.xml file of your Maven installation for system setting, or your user $(HOME)/.m2/settings.xml: Search for "proxy" in it, uncomment it and provide your configuration in the according fields.
+For Maven, either edit:
+* the conf/settings.xml file of your Maven installation (system setting)
+* or your user $(HOME)/.m2/settings.xml
+
+Search for "proxy" in it, uncomment it and provide your configuration in the according fields.
 
 ## Build
 
