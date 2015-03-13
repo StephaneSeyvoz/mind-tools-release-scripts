@@ -30,18 +30,17 @@ See http://stackoverflow.com/questions/783811/getting-git-to-work-with-a-proxy-s
 For Maven:
 Either edit the conf/settings.xml file of your Maven installation for system setting, or your user $(HOME)/.m2/settings.xml: Search for "proxy" in it, uncomment it and provide your configuration in the according fields.
 
-
 ## Build
 
 Linux users:
 * Simply go to the sh folder: "cd sh"
-* And run "./mind-tools-release-full-linux.sh"
+* And run "./mind-tools-install-release-full-linux.sh"
 
 ## Linux Details
 
 Use the sh/ scripts, and:
 
-### sh/mind-tools-release-full-linux.sh
+### sh/mind-tools-install-release-full-linux.sh
 
 USAGE: mind-tools-install-release-full-linux.sh [manifest_branch_name] [manifest_url]
 
