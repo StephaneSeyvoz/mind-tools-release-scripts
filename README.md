@@ -33,7 +33,9 @@ Either edit the conf/settings.xml file of your Maven installation for system set
 
 ## Build
 
-Linux users: Simply run ./mind-tools-release-full-linux.sh
+Linux users:
+* Simply go to the sh folder: "cd sh"
+* And run "./mind-tools-release-full-linux.sh"
 
 ## Linux Details
 
