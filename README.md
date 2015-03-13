@@ -13,8 +13,8 @@ Scripts to build a full integrated release of MIND tools - compiler / doc / plug
 If behind a proxy, you must set/export the "http_proxy" and "https_proxy" environment variables before running the scripts.
 
 On Linux, this should be done in your command line or in your /home/user_id/.bashrc file, as follows:
-    export http_proxy=http://proxyuser:proxypwd@proxy_url_or_ip:proxy_port
-    export https_proxy=https://proxyuser:proxypwd@proxy_url_or_ip:proxy_port
+* export http_proxy=http://proxyuser:proxypwd@proxy_url_or_ip:proxy_port
+* export https_proxy=https://proxyuser:proxypwd@proxy_url_or_ip:proxy_port
 
 See in the sh/mind-tools-create-workspace-linux.sh file for more details.
 
@@ -23,11 +23,11 @@ Your Git and Maven tools should be configured to handle the proxy as well, other
 For Git:
 
 Either:
-    git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
-    git config --global https.proxy https://proxyuser:proxypwd@proxy.server.com:8080
+* git config --global http.proxy http://proxyuser:proxypwd@proxy_url_or_ip:proxy_port
+* git config --global https.proxy https://proxyuser:proxypwd@proxy_url_or_ip:proxy_port
 
 Or edit your $(HOME)/.gitconfig file 
-    Add [http] and [https] sections with the same keys and values.
+* Add [http] and [https] sections with the same keys and values.
 
 See http://stackoverflow.com/questions/783811/getting-git-to-work-with-a-proxy-server for further details
 
