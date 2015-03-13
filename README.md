@@ -23,10 +23,13 @@ Your Git and Maven tools should be configured to handle the proxy as well, other
 For Git,
 
 * Either:
-git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
-git config --global https.proxy https://proxyuser:proxypwd@proxy.server.com:8080
+    git config --global http.proxy http://proxyuser:proxypwd@proxy.server.com:8080
+    git config --global https.proxy https://proxyuser:proxypwd@proxy.server.com:8080
 
-* Or edit your $(HOME)/.gitconfig file and the [http] and [https] sections with the same keys and values.
+* Or edit your $(HOME)/.gitconfig file 
+
+    Add [http] and [https] sections with the same keys and values.
+
 See http://stackoverflow.com/questions/783811/getting-git-to-work-with-a-proxy-server for further details
 
 For Maven:
