@@ -4,7 +4,12 @@ Scripts to build a full integrated release of MIND tools - compiler / doc / plug
 ## Pre-requisites
 
 ### Tools:
-* python 2.7+
+
+Either:
+* python 2.7+ for Linux
+* Python 3.4+ for Windows
+
+For everyone:
 * git 1.7.2+
 * curl or wget download utility
 
