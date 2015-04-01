@@ -73,8 +73,8 @@ pushd $release_workspace > /dev/null 2>&1
 # rm -rf "~/.m2/repository"
 
 # Install mind-parent jar into maven local repository (all mind-tools modules depend transitively on this one, needed before building)
-printf 'mvn -U clean install -f maven/mind-parent/pom.xml %s\n' $BUILD_OPTIONS
-mvn -U clean install -f maven/mind-parent/pom.xml $BUILD_OPTIONS || exit 1
+printf 'mvn -U clean install -f mind-parent/pom.xml %s\n' $BUILD_OPTIONS
+mvn -U clean install -f mind-parent/pom.xml $BUILD_OPTIONS || exit 1
 
 # Install mind-compiler pom into maven local repository (all mind-tools plug-ins pom depend on this one, needed before building)
 printf 'mvn -U clean install -f ./mind-compiler/pom.xml --projects :mind-compiler %s\n' $BUILD_OPTIONS
